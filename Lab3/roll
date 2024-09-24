@@ -1,0 +1,18 @@
+if [ "$#" -ne 2 ]; then
+    echo "Error: You must provide exactly two arguments."
+    echo "Usage: ./roll <number_of_dice> <number_of_sides>"
+    exit 1
+fi
+
+num_dice=$1
+num_sides=$2
+
+if [[ $num_dice -le 1 || $num_sides -le 1 ]]; then
+    echo "Error: Both arguments must be greater than 1."
+    exit 1
+fi
+
+for ((i = 1; i <= num_dice; i++)); do
+    roll=$((RANDOM % num_sides + 1))
+    echo "Die $i: $roll"
+done
