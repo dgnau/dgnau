@@ -33,3 +33,16 @@ case $1 in
         echo "$task" >> "$TASKS_FILE"
         echo "Task added: $task"
         ;;
+    complete)
+        if [ -z "$2" ]; then
+            read -p "Enter task description: " task
+        else
+            task="$2"
+        fi
+        if grep -qx "$task" "$TASKS_FILE"; then
+            grep -v -x "$task" "$TASKS_FILE" > "$TASKS_FILE.tmp" && mv "$TASKS_FILE.tmp" "$TASKS_FILE"
+            echo "Task completed: $task"
+        else
+            echo "Task not found: $task"
+        fi
+        ;;
