@@ -16,3 +16,9 @@ user_guide() {
     echo "  tt view"
     echo "  tt clear"
 }
+
+if [ -z "$1" ]; then
+    echo "Invalid argument."
+    user_guide
+    exit 1
+fi
