@@ -63,3 +63,12 @@ case $1 in
             echo "Operation cancelled."
         fi
         ;;
+    help)
+        user_guide
+        ;;
+    *)
+        echo "Invalid argument."
+        user_guide
+        exit 1
+        ;;
+esac
