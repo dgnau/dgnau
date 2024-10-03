@@ -1,1 +1,18 @@
+TASKS_FILE="$HOME/.tasks"
 
+user_guide() {
+    echo "Task Tracker (tt) User Guide"
+    echo "=============================="
+    echo "Available Functions"
+    echo "  tt add \"<task_description>\"  - Add a new task"
+    echo "  tt complete \"<task_description>\" - Complete a task"
+    echo "  tt view                       - View all tasks"
+    echo "  tt clear                      - Clear all tasks"
+    echo "  tt help                       - Show this help message"
+    echo ""
+    echo "Examples:"
+    echo "  tt add \"Walk the dog\""
+    echo "  tt complete \"Walk the dog\""
+    echo "  tt view"
+    echo "  tt clear"
+}
