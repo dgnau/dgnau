@@ -46,3 +46,20 @@ case $1 in
             echo "Task not found: $task"
         fi
         ;;
+    view)
+        if [ -f "$TASKS_FILE" ]; then
+            echo "Tasks:"
+            cat "$TASKS_FILE"
+        else
+            echo "No tasks found."
+        fi
+        ;;
+    clear)
+        read -p "Are you sure you want to remove all tasks? (y/n) " confirm
+        if [[ $confirm == [yY] ]]; then
+            rm -f "$TASKS_FILE"
+            echo "All tasks cleared."
+        else
+            echo "Operation cancelled."
+        fi
+        ;;
