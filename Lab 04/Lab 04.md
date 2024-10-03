@@ -69,16 +69,16 @@ Example of using `help`
 ```
 ./tt help
 
-## Task Tracker (tt) User Guide
+Task Tracker (tt) User Guide
 ==============================
-### Available Functions:
+Available Functions
   tt add "<task_description>"  - Add a new task
   tt complete "<task_description>" - Complete a task
   tt view                       - View all tasks
   tt clear                      - Clear all tasks
   tt help                       - Show this help message
 
-### Examples:
+Examples:
   tt add "Walk the dog"
   tt complete "Walk the dog"
   tt view
