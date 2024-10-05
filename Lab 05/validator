@@ -12,3 +12,6 @@ fi
 
 sort "$input_file" | uniq > clean1.txt
 echo "Clean1.txt updated"
+
+grep -i '^[a-zA-Z0-9]' clean1.txt > clean2.txt
+echo "Clean2.txt updated"
