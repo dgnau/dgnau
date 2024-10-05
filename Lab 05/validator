@@ -18,3 +18,8 @@ echo "Clean2.txt updated"
 
 grep -v '[^a-zA-Z0-9][^a-zA-Z0-9]' clean2.txt > clean3.txt
 echo "Clean3.txt updated"
+
+grep -E '^[a-zA-Z0-9][a-zA-Z0-9_.-]*@[a-zA-Z0-9]+(\.[a-zA-Z]{2,})+$' clean3.txt | grep -E '\.(com|org|net)$' > clean4.txt
+echo "Clean4.txt updated"
+
+echo "Process completed. Check clean4.txt for the final output."
