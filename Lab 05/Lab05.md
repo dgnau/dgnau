@@ -1,7 +1,7 @@
 ## Lab 05
 
-- Name:
-- Email: 
+- Name: Dan Gnau
+- Email: gnau.11@wright.edu
 
 ## Part 1 
 
@@ -11,12 +11,12 @@ Make sure the following files are in your GitHub repository
 
 ## Part 2 Answers
 
-1. `place your sed commands between backtick characters`
-2. `so that they are pretty and readable in markdown`
-3. `replace these examples with your commands`
-4. `do this for rest of commands in lab`
-5.
-6. 
+1. `sed 's/<\/[^>]*>//g'`
+2. `sed 's/[[:space:]]*<li>/- /g'`
+3. `sed 's/<h1>\(.*\)<\/h1>/# \1/g'`
+4. `sed 's/<h2>\(.*\)<\/h2>/## \1/g'`
+5. `sed 's/<ul>//g; s/<\/ul>//g; s/<html>//g; s/<\/html>//g'`
+6. `sed 's/\bBatches\b/Matches/g'`
 
 ## Part 3 Answers
 
