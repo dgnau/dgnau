@@ -15,3 +15,6 @@ echo "Clean1.txt updated"
 
 grep -i '^[a-zA-Z0-9]' clean1.txt > clean2.txt
 echo "Clean2.txt updated"
+
+grep -v '[^a-zA-Z0-9][^a-zA-Z0-9]' clean2.txt > clean3.txt
+echo "Clean3.txt updated"
