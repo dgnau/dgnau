@@ -20,15 +20,18 @@ Make sure the following files are in your GitHub repository
 
 ## Part 3 Answers
 
-1.
-2.
-3.
-4.
-5.
+1. `awk '$1 ~ /^Bil/ {print $1}' records.txt`
+2. `awk '$4 == 42 {print $3}' records.txt`
+3. `awk '$3 ~ /wright\.edu/ {print $2 ", " $1 ": " $3}' records.txt`
+4. `awk '$3 ~ /wright\.edu/ && $5 == "1234" {print $2 " favorite number is: " $4}' records.txt`
+5. `awk '{$5 = "N0T@PL@!NP@$$W0RD"; print}' records.txt > updaterecords.txt`
 
 ## Extra Credit - Remove this if not doing
 
-1. Source: 
-    - Regular Expression Pattern: 
+1. Source: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions](https://html.spec.whatwg.org/multipage/input.html#valid-e-mail-address)
+    - Regular Expression Pattern: /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
 2. Pattern explanation:
-3. Verify `validator2` is in your GitHub repository
+   -Starts with valid characters, followed by an @.
+    -Contains a domain that starts with an alphanumeric character, can have hyphens, and allows for multiple subdomains.
+    -Ends with a valid structure, ensuring it conforms to common email formatting rules.
+4. Verify `validator2` is in your GitHub repository
