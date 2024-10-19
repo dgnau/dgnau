@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [ "$#" -ne 2 ]; then
     echo "Error: You must provide exactly two arguments."
     echo "Usage: ./roll <number_of_dice> <number_of_sides>"
@@ -14,5 +16,4 @@ fi
 
 for ((i = 1; i <= num_dice; i++)); do
     roll=$((RANDOM % num_sides + 1))
-    echo "Die $i: $roll"
-done
+    echo "Die $
