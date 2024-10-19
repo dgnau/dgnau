@@ -51,22 +51,27 @@ Verify that `roll` made it to your GitHub repository for this course and is in y
 
 ## Part 5 Answers
 
-1. PATH =
-2. To set condition to `true`, I need to...
-3. Command(s):
-4. PATH =
-   - Difference:
+1. PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+2. To set condition to `true`, I need to... create a new bin directory
+3. Command(s): `mkdir ~/bin`
+4. PATH = /home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+   - Difference: the new value contains the new directory /home/ubuntu/bin
 5. Command(s):
-6. Commands & modification explanations: 
+- `touch ~/bin/roll` **adds roll to bin**
+- `cd ~bin` **changes the directory to bin**
+- `chmod u+w ~/bin/roll` **changes the permissions of roll so I can write to it**
+- `nano roll` **editor for roll**
+6. Commands & modification explanations:
+  `chmod +x ~/bin/roll` **I changed the permissions for roll to be executable anywhere**
 7. Script permission breakdown
    - User
-      - must be:
-      - has permissions to:
+      - must be: the owner of the file
+      - has permissions to: read, write, and execute the file
    - Group
-      - must be:
-      - has permissions to:
+      - must be: a member of the file's group
+      - has permissions to: read, write, and execute the file
    - Other
-      - has permissions to:
+      - has permissions to: read and execute the file (but cannot write to it)
 
 ## Extra Credit
 
