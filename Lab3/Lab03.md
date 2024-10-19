@@ -16,8 +16,7 @@
 Host cegaws
     HostName 3.221.20.238
     User ubuntu
-    Port 22
-
+    IdentityFile /home/dgnau/ceg
 ```
 
 6. `ssh` command after configuring an entry in the `config` file: ssh cegaws
