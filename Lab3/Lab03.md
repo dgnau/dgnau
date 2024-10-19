@@ -75,4 +75,4 @@ Verify that `roll` made it to your GitHub repository for this course and is in y
 
 ## Extra Credit
 
-1. Note here *what* you did to the script for the extra credit.
+1. I changed the text to appear red if an error occured.
