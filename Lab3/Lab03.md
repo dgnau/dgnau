@@ -30,11 +30,11 @@ Host cegaws
 3. `cat nums.txt | sort -n >> all_nums.txt`
    - Explanation: reads "nums.txt", use it as an input, sort it numerically, and then output it to a file named "all_nums.txt"
 4. `cat << "DONE" > here.txt`
-   - Explanation: prints DONE on a line by itself and outputs it to a file called "here.txt"
+   - Explanation: cat will read everything typed after the command, until DONE is typed by the user, into a document named "here.txt"
 5. `ls -lt ~ | head`
    - Explanation: list the files in the home directory in long format, sort them by modification time, and uses the output to display the next 10 lines of input
 6. `history | grep ".md"`
-   - Explanation: show a list of previous commands used, uses it as the input, and grep will search for matching lines of code
+   - Explanation: show a list of previous commands used, uses it as the input, and grep will use the input to search for lines of code that contain the string ".md"
 
 ## Part 3
 
