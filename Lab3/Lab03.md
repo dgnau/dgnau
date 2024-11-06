@@ -6,7 +6,7 @@
 
 ## Part 1 Answers
 
-1. `ssh` command before configuring `config` file: ssh -i /home/dgnau/ceg ubuntu@3.221.20.238
+1. `ssh` command before configuring `config` file: ssh -i /home/dgnau/ceg ubuntu@34.195.55.229
 2. HostName: 3.221.20.238
 3. User: ubuntu
 4. IdentityFile: ceg.pem
